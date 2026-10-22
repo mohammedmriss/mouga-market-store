@@ -1,0 +1,9 @@
+.wrangler/
+.dev.vars
+.env
+.env.*
+!.env.example
+node_modules/
+*.7z
+*.zip
+dist/

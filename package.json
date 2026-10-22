@@ -1,0 +1,10 @@
+{
+  "name": "mouga-market-store",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "minify": "node scripts/minify.mjs",
+    "check": "node --check js/store.js && node --check js/product.js && node --check js/contact.js && node --check js/admin.js && node --check order-worker/worker.js && node --check order-worker/hash-password.mjs && node --check scripts/generate-product-pages.mjs && node --check scripts/generate-webhook-secret.mjs && node --check scripts/secret-scan.mjs && node --check scripts/minify.mjs && node --check tests/worker.test.mjs && node -e \"new Function(require('node:fs').readFileSync('order-worker/Code.gs','utf8'))\""
+  }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self'; script-src 'self'; connect-src 'self' https://*.workers.dev; base-uri 'self'; form-action 'self'; object-src 'none'">
+  <meta name="description" content="تسوق منتجات مختارة من Mouga Market والتوصيل لجميع مدن المغرب.">
+  <title>Mouga Market | تسوق بثقة</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/store.js"></script>
+</head>
+<body>
+  <div class="announcement" id="announcement"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" id="brand">Mouga Market</a>
+    <nav aria-label="التنقل الرئيسي">
+      <a href="#products">المنتجات</a><a href="contact.html">تواصل معنا</a>
+      <button class="button button-light" id="cart-open" type="button">السلة <span id="cart-count">0</span></button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title" id="hero">
+      <div><p class="eyebrow">مرحبا بيك فالمتجر</p><h1 id="hero-title">اختيارات زوينة، وتوصيل حتى لباب دارك</h1>
+      <p id="hero-description">تسوق براحتك، خلّص ملي يوصلك الطلب.</p><a class="button" id="hero-button" href="#products">تسوق دابا</a></div>
+      <img src="assets/product.svg" width="420" height="320" alt="منتجات مختارة بعناية">
+    </section>
+    <section class="benefits" aria-label="مميزات التسوق"><p>التوصيل لجميع مدن المغرب</p><p>الدفع عند الاستلام</p><p>خدمة زبناء قريبة ليك</p></section>
+    <section class="section" id="products"><div class="section-heading"><div><p class="eyebrow">تشكيلة المتجر</p><h2>المنتجات</h2></div><div id="category-filters" class="filters" aria-label="تصفية حسب الفئة"></div></div><p id="store-message" class="notice" role="status"></p><div id="product-grid" class="product-grid"></div></section>
+    <section class="about section"><p class="eyebrow">على Mouga Market</p><h2>تسوق واضح وبلا تعقيد</h2><p>كنختارو ليك منتجات نافعة، وكنوصلو الطلب ديالك لمدينتك. الأداء غير ملي توصلك السلعة.</p></section>
+    <section class="contact-callout"><div><h2>عندك شي سؤال؟</h2><p>تواصل معنا ونعاونوك بكل فرح.</p></div><a class="button button-light" href="contact.html">تواصل معنا</a></section>
+  </main>
+  <footer class="site-footer"><span>© <span id="year"></span> <span id="footer-text">Mouga Market</span></span><nav><a href="privacy-policy.html">الخصوصية</a><a href="terms.html">شروط الاستخدام</a><a href="contact.html">تواصل معنا</a></nav></footer>
+  <dialog id="cart-dialog" aria-labelledby="cart-title"><div class="dialog-heading"><h2 id="cart-title">السلة ديالك</h2><button class="icon-button" type="button" data-close aria-label="سد السلة">×</button></div><div id="cart-items"></div><p class="cart-total">المجموع: <strong id="cart-total">0 درهم</strong></p>
+    <form id="checkout-form" class="form-grid"><label>الاسم الكامل<input name="name" required maxlength="100" autocomplete="name"></label><label>رقم الهاتف<input name="phone" type="tel" required maxlength="20" autocomplete="tel" placeholder="06 أو 07 أو +212"></label><label>المدينة<input name="city" required maxlength="80" autocomplete="address-level2"></label><label>العنوان الكامل<textarea name="address" required maxlength="200" autocomplete="street-address"></textarea></label><label class="honeypot" aria-hidden="true">اترك هذا الحقل فارغا<input name="website" tabindex="-1" autocomplete="off"></label><p class="notice" id="checkout-message" role="status"></p><button class="button" id="checkout-button" type="submit">صيفط الطلب</button></form>
+  </dialog>
+</body>
+</html>

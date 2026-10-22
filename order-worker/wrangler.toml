@@ -1,0 +1,8 @@
+name = "mouga-market-orders"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+GITHUB_REPO = "OWNER/mouga-market-store"
+GITHUB_BRANCH = "main"
+ALLOWED_ORIGINS = "https://YOUR-DOMAIN.example"

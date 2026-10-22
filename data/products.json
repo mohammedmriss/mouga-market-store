@@ -1,0 +1,28 @@
+[
+  {
+    "id": "organizer-box",
+    "name": "منظم متعدد الاستعمالات",
+    "category": "home",
+    "price": 129,
+    "stock": 12,
+    "status": "active",
+    "badge": "اختيار مميز",
+    "images": ["assets/product.svg"],
+    "sizes": [],
+    "colors": [],
+    "description": "منظم عملي وأنيق للاستعمال اليومي فالدار. ساهل فالتنظيف وكيعاونك ترتب أغراضك."
+  },
+  {
+    "id": "daily-bag",
+    "name": "حقيبة يومية",
+    "category": "accessories",
+    "price": 189,
+    "stock": 7,
+    "status": "active",
+    "badge": "",
+    "images": ["assets/product.svg"],
+    "sizes": ["صغير", "متوسط"],
+    "colors": ["أسود", "أخضر"],
+    "description": "حقيبة خفيفة للاستعمال اليومي، متوفرة بأحجام وألوان مختارة."
+  }
+]

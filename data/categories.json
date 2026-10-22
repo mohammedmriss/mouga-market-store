@@ -1,0 +1,5 @@
+[
+  { "id": "all", "name": "جميع المنتجات", "image": "" },
+  { "id": "home", "name": "المنزل", "image": "" },
+  { "id": "accessories", "name": "إكسسوارات", "image": "" }
+]

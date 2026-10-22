@@ -1,0 +1,17 @@
+{
+  "storeName": "Mouga Market",
+  "logoUrl": "",
+  "primaryColor": "#17624f",
+  "secondaryColor": "#d59b52",
+  "font": "system-ui",
+  "announcement": { "enabled": true, "text": "التوصيل لجميع مدن المغرب والدفع عند الاستلام" },
+  "phone": "",
+  "whatsapp": "",
+  "email": "",
+  "order_endpoint": "",
+  "facebookPixelId": "",
+  "footerText": "شكرا على ثقتكم فـ Mouga Market",
+  "slides": [],
+  "sections": { "benefits": true, "about": true, "contact": true },
+  "socialLinks": []
+}
